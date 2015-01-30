@@ -5,10 +5,10 @@ Class Connection
 protected $host = “localhost”;
 protected $user = “postgres”;
 protected $pswd = “postgres”;
-protected $dbname = “teste”;
+protected $dbname = “test”;
 protected $con = null;
 
-function __construct(){} //empty construct, we dont need for this
+function __construct(){} //empty construct, we dont need it here
 
 #method that starts the conn
 function open(){
@@ -17,12 +17,12 @@ password=$this->pswd dbname=$this->dbname“);
 return $this->con;
 }
 
-#methos that closes the conn
+#method that closes the conn
 function close(){
 @pg_close($this->con);
 }
 
-#methos that checks the conn, not user-friendly, just for our debbuging
+#method that checks the conn, not user-friendly, just for our debbuging
 function statusCon(){
 if(!$this->con){
 echo “<h3>Could not connect to Database [$this->dbname] in [$this->host].</h3>”;
