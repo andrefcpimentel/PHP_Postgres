@@ -1,6 +1,6 @@
 <?
 
-Class Connection
+Class SimpleConnection
 {
 protected $host = “localhost”;
 protected $user = “postgres”;
