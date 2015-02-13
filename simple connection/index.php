@@ -16,4 +16,6 @@ $minhaConexao->close();
 
 #lets check here if its really closed
 $minhaConexao->statusCon();
+
+//todo: test of conn
 ?>
